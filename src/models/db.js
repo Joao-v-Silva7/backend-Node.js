@@ -10,7 +10,7 @@ const sequelize = new Sequelize(
     }
 );
 
-sequelize.authenticate(function(){
+sequelize.authenticate().then(function(){
     console.log("Banco de dados conectado com Sucesso");
 }).catch(function(erro){
     console.log("Erro ao se conectar com o banco de dados" + erro);
