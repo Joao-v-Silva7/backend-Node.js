@@ -1,12 +1,13 @@
+require("dotenv").config();
 const { Sequelize } = require("sequelize");
 //conexão com o banco de dados
 const sequelize = new Sequelize(
-    "cadastro",
-    "root",
-    "123456",
+    'cadastro', 
+    'root',
+    '123456',
     {
         host: "localhost",
-        dialect: "mysql"  //colocar o nome do respectivo banco que estiver trabalhando
+        dialect: "mysql",  //colocar o nome do respectivo banco que estiver trabalhando
     }
 );
 

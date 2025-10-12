@@ -16,10 +16,5 @@ const Produtos = db.sequelize.define("produtos", {
     }
 
 });
-Produtos.create({
-    nome: "Camisa Polo T-shirt",
-    preco: "200.00",
-    descricao: "Queima de Estoque"
-});
-//forçando a criação da tabela produtos
-Produtos.sync({force: false});//false para n duplicar as tabelas quando o servidor abrir e fechar novamente
+Produtos.sync({force: false});//false para n duplicar as tabelas quando o servidor abrir e fechar novamente caso eu force a criação dele
+module.exports = Produtos;
