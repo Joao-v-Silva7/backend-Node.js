@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "type": "module",
     "dev": "nodemon src/index.js",
     "db": "node src/models/db.js",
     "start": "node src/index.js",
